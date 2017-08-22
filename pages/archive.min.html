@@ -1,0 +1,11 @@
+<style type="text/css" rel='stylesheet' media='screen'>#titimangsa{float:left;width:auto;display:inline-block}#poslama{margin-left:11rem}</style>
+<script type="text/javascript">function LoadTheArchive(j){var i=new Array();var b=new Array();var k=new Array();var e=new Array();var c=new Array();if("entry" in j.feed){var g=j.feed.entry.length;for(var f=0;f<g;f++){var h=j.feed.entry[f];i.push(h.title.$t);k.push(h.published.$t.substring(0,4));e.push(h.published.$t.substring(5,7));c.push(h.published.$t.substring(8,10));var a;for(var d=0;d<h.link.length;d++){if(h.link[d].rel=="alternate"){a=h.link[d].href;break}}b.push(a)}}DisplaytheTOC(i,b,k,e,c)}
+function DisplaytheTOC(PostTitles,PostURLs,PostYears,PostMonths,PostDays) {
+  var MonthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var NumberOfEntries = PostTitles.length;
+  for(var EntryNum = 0;EntryNum < NumberOfEntries;EntryNum++) {
+    NameOfMonth = MonthNames[parseInt(PostMonths[EntryNum],10)-1]
+    document.write('<div><div id="titimangsa"><code>'+PostDays[EntryNum]+' '+NameOfMonth+' '+PostYears[EntryNum]+'</code> - </div><div id="poslama"><a href ="'+PostURLs[EntryNum]+'">'+PostTitles[EntryNum]+'</a></div></div>');
+  }
+}</script>
+<script src="https://www.rizaumami.com/feeds/posts/default?max-results=500&amp;alt=json-in-script&amp;callback=LoadTheArchive"></script>

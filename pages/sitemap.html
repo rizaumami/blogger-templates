@@ -1,0 +1,219 @@
+<style type='text/css' rel='stylesheet' media='screen'>
+  >#kiri {
+    float: left;
+    width: auto;
+    display: inline-block;
+    padding-left: 1rem
+  }
+
+  #artikel {
+    margin-left: 2rem
+  }
+
+  .recent-article {
+    background-color: #5cb85c;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em
+  }
+</style>
+
+<script type='text/javascript'>
+  var postTitle = new Array();
+  var postUrl = new Array();
+  var postPublished = new Array();
+  var postDate = new Array();
+  var postLabels = new Array();
+  var postRecent = new Array();
+  var sortBy = "titleasc";
+  var numberfeed = 0;
+
+  function bloggersitemap(d) {
+    function c() {
+      if ('entry' in d.feed) {
+        var s = d.feed.entry.length;
+        numberfeed = s;
+        ii = 0;
+        for (var l = 0; l < s; l++) {
+          var b = d.feed.entry[l];
+          var r = b.title.$t;
+          var i = b.published.$t.substring(0, 10);
+          var k;
+          for (var p = 0; p < b.link.length; p++) {
+            if (b.link[p].rel == 'alternate') {
+              k = b.link[p].href;
+              break
+            }
+          }
+          var a = '';
+          for (var p = 0; p < b.link.length; p++) {
+            if (b.link[p].rel == 'enclosure') {
+              a = b.link[p].href;
+              break
+            }
+          }
+          var t = '';
+          if ('category' in b) {
+            for (var p = 0; p < b.category.length; p++) {
+              t = b.category[p].term;
+              var q = t.lastIndexOf(';');
+              if (q != -1) {
+                t = t.substring(0, q)
+              }
+              postLabels[ii] = t;
+              postTitle[ii] = r;
+              postDate[ii] = i;
+              postUrl[ii] = k;
+              postPublished[ii] = a;
+              if (l < 10) {
+                postRecent[ii] = true
+              } else {
+                postRecent[ii] = false
+              }
+              ii = ii + 1
+            }
+          }
+        }
+      }
+    }
+    c();
+    sortBy = 'titledesc';
+    sortPosts(sortBy);
+    sortlabel();
+    displayToc()
+  }
+
+  function sortPosts(g) {
+    function h(c, a) {
+      var b = postTitle[c];
+      postTitle[c] = postTitle[a];
+      postTitle[a] = b;
+      var b = postDate[c];
+      postDate[c] = postDate[a];
+      postDate[a] = b;
+      var b = postUrl[c];
+      postUrl[c] = postUrl[a];
+      postUrl[a] = b;
+      var b = postLabels[c];
+      postLabels[c] = postLabels[a];
+      postLabels[a] = b;
+      var b = postPublished[c];
+      postPublished[c] = postPublished[a];
+      postPublished[a] = b;
+      var b = postRecent[c];
+      postRecent[c] = postRecent[a];
+      postRecent[a] = b
+    }
+    for (var e = 0; e < postTitle.length - 1; e++) {
+      for (var f = e + 1; f < postTitle.length; f++) {
+        if (g == 'titleasc') {
+          if (postTitle[e] > postTitle[f]) {
+            h(e, f)
+          }
+        }
+        if (g == 'titledesc') {
+          if (postTitle[e] < postTitle[f]) {
+            h(e, f)
+          }
+        }
+        if (g == 'dateoldest') {
+          if (postDate[e] > postDate[f]) {
+            h(e, f)
+          }
+        }
+        if (g == 'datenewest') {
+          if (postDate[e] < postDate[f]) {
+            h(e, f)
+          }
+        }
+        if (g == 'orderlabel') {
+          if (postLabels[e] > postLabels[f]) {
+            h(e, f)
+          }
+        }
+      }
+    }
+  }
+
+  function sortlabel() {
+    sortBy = 'orderlabel';
+    sortPosts(sortBy);
+    var d = 0;
+    var c = 0;
+    while (c < postTitle.length) {
+      temp1 = postLabels[c];
+      firsti = d;
+      do {
+        d = d + 1
+      } while (postLabels[d] == temp1);
+      c = d;
+      sortPosts2(firsti, d);
+      if (c > postTitle.length) {
+        break
+      }
+    }
+  }
+
+  function sortPosts2(i, j) {
+    function h(c, a) {
+      var b = postTitle[c];
+      postTitle[c] = postTitle[a];
+      postTitle[a] = b;
+      var b = postDate[c];
+      postDate[c] = postDate[a];
+      postDate[a] = b;
+      var b = postUrl[c];
+      postUrl[c] = postUrl[a];
+      postUrl[a] = b;
+      var b = postLabels[c];
+      postLabels[c] = postLabels[a];
+      postLabels[a] = b;
+      var b = postPublished[c];
+      postPublished[c] = postPublished[a];
+      postPublished[a] = b;
+      var b = postRecent[c];
+      postRecent[c] = postRecent[a];
+      postRecent[a] = b
+    }
+    for (var f = i; f < j - 1; f++) {
+      for (var g = f + 1; g < j; g++) {
+        if (postTitle[f] > postTitle[g]) {
+          h(f, g)
+        }
+      }
+    }
+  };
+
+  function displayToc() {
+    var d = 0;
+    var c = 0;
+    var e = '';
+    while (c < postTitle.length) {
+      temp1 = postLabels[c];
+      document.write('<div><h4>' + temp1 + '</h4>');
+      firsti = d;
+      do {
+        e = '<div><div id="kiri">•</div><div id="artikel"><a href="' + postUrl[d] + '">' + postTitle[d] + '</a>';
+        if (postRecent[d] == true) {
+          e += ' <span class="recent-article">New!</span>'
+        }
+        document.write(e + '</div></div>');
+        d = d + 1
+      } while (postLabels[d] == temp1);
+      c = d;
+      document.write('</div>');
+      sortPosts2(firsti, d);
+      if (c > postTitle.length) {
+        break
+      }
+    }
+  };
+</script>
+<script async='async' src="https://www.rizaumami.com/feeds/posts/default?max-results=9999&amp;alt=json-in-script&amp;callback=bloggersitemap"></script>
