@@ -22,12 +22,12 @@ The template can be applied using two method:
 
 #### B. Upload template method
 - Choose the blog to update (1)
-- Click the top right Backup/Restore button
+- Click the top right Backup/Restore button (2)
 
   ![Backup/Restore](https://raw.githubusercontent.com/rizaumami/blogger-templates/master/docs/imgs/backup-restore.png)
 
-- Back up currently used theme (6)
-- Upload [rizaumami.xml](templates/rizaumami.xml) or [rizaumami.min.xml](templates/rizaumami.min.xml) (7)
+- Back up currently used theme (5)
+- Upload [rizaumami.xml](templates/rizaumami.xml) or [rizaumami.min.xml](templates/rizaumami.min.xml) (6)
 
 ### 3. Turn off mobile theme
 - Under "Mobile" click the gear button.
