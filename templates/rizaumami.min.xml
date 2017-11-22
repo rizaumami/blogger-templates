@@ -60,7 +60,39 @@ Page Not Found | <data:blog.title/>
 <b:skin><![CDATA[html,body{font-family:'Open Sans',Arial,'NanumGothic',sans-serif;font-size:15px}body{padding-top:70px}hr{border-top:1px solid #eee}pre{margin:10px 0;border-radius:4px}code,pre{font-family:Monospace,Monaco,Menlo,Consolas,"Courier New"}.panel-heading{font-weight:bold}.navbar-nav>li>.dropdown-menu{margin-top:2px;border:1px solid #ccc;border-radius:4px}.navbar-inverse .navbar-brand{color:white;font-weight:bold}.navbar-inverse .navbar-nav>li>a{color:white}#navbar,#Attribution1{display:none;height:0;visibility:hidden}.text-right{margin:10px 0 0 0}.pager li>a,.pager li>span{border-radius:4px}.panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}.post-meta{margin-bottom:-1rem;color:grey}.blog-footer{margin-top:20px;padding:20px 0;text-align:center;background-color:#eee;border-top:1px solid #ccc;color:#586069!important}.footer-line{margin:5px 0}.line-break{display:inline;margin-right:45px}.post-meta-line{display:inline;margin-right:17px;color:#777}.footer-line a:link{color:inherit}.footer-line a:hover,.footer-line a:focus{color:#337ab7;text-decoration:none}.separator img{border:2px solid #777;border-radius:4px;width:auto;height:auto}@media(max-width:992px){.separator img{max-width:100%!important;height:auto}}.separator a{margin-left:0!important;margin-right:0!important}.comments .comments-content .comment{margin-bottom:0}.comments .comment .comment-actions a{padding:6px 12px;border-radius:4px;margin-right:10px;color:inherit;border:1px solid #bce8f1;background-color:#d9edf7}.avatar-image-container{background:none!important;border:none!important}.datetime.secondary-text{float:right}.comments .comments-content .comment-content{line-height:20px;font-size:14px;padding-bottom:10px}.user.blog-author a{font-size:20px}.comment-actions a{color:#fff}.comments .continue{cursor:pointer;border:1px solid #d6e9c6;border-radius:4px;width:-moz-fit-content;background-color:#dff0d8}.comment-block{border:1px solid #ddd;padding:20px;border-radius:4px}.comment-header{border-bottom:1px solid #ddd;padding-bottom:10px}#comments{padding:10px;border:0 dashed #ddd}#comment-editor{border:1px solid #ccc;border-radius:4px;height:240px}#comments-block3{padding:0;margin:0;float:left;overflow:hidden;position:relative}#comment-name-url{width:465px;float:left}#comment-date{width:465px;float:left;margin-top:5px;font-size:10px}#comments h4{font-weight:normal;text-transform:capitalize;margin:0;margin-top:5px;margin-bottom:0;border-top:1px solid #d2d2d2;padding-top:20px}#tothetopbtn{position:fixed;bottom:0;right:0;padding:7px;z-index:100;fill-opacity:.36;transition:fill-opacity .3s ease-out}#tothetopbtn:hover{fill-opacity:1}.embed-responsive{border:solid 2px #777;border-radius:4px}@media(max-width:767px){.panel-mobile{padding:0;border:0}.line-break{display:block;margin-bottom:1rem;margin-right:0}.post-meta-line{display:block;padding-left:3px}}]]></b:skin>
 </head>
 <body>
-<b:section class='navbar' id='navbar-top' showaddelement='no'/>
+<div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+<div class='container'>
+<div class='navbar-header'>
+<a class='navbar-brand' href='/'><data:blog.title/></a>
+<button class='navbar-toggle' data-target='#navbar-main' data-toggle='collapse' type='button'>
+<span class='icon-bar'/>
+<span class='icon-bar'/>
+<span class='icon-bar'/>
+</button>
+</div>
+<div class='collapse navbar-collapse' id='navbar-main'>
+<ul class='nav navbar-nav'>
+<li><a href='/p/about.html'>About</a></li>
+<li><a href='/p/archive.html'>Archive</a></li>
+<li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Meta<b class='caret'/></a>
+<ul class='dropdown-menu'>
+<li><a href='/p/privacy-policy.html'>Privacy Policy</a></li>
+<li class='divider' role='separator'/>
+<li><a href='/p/sitemap.html'>Sitemap</a></li>
+<li class='divider' role='separator'/>
+<li><a href='/p/terms-of-service.html'>Terms of Service</a></li>
+</ul>
+</li>
+</ul>
+<form accept-charset='utf-8' action='/search' class='navbar-form navbar-right' method='get' role='search' target='_top'>
+<div class='input-group'>
+<input autocomplete='off' class='form-control' id='search-text' name='q' placeholder='Search' title='Search' type='text'/>
+<span class='input-group-btn'><button class='btn btn-default' id='search-button' type='submit'>Search</button></span>
+</div>
+</form>
+</div>
+</div>
+</div>
 <div class='container'>
 <b:section class='header' id='header' showaddelement='yes'/>
 <div class='row'>
