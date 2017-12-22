@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html expr:dir='data:blog.languageDirection' lang='id' prefix='b: http://www.google.com/2005/gml/b data: http://www.google.com/2005/gml/data expr: http://www.google.com/2005/gml/expr og: http://ogp.me/ns#' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html expr:dir='data:blog.languageDirection' lang='id' prefix='b: https://www.google.com/2005/gml/b data: https://www.google.com/2005/gml/data expr: https://www.google.com/2005/gml/expr og: https://ogp.me/ns#' xmlns='https://www.w3.org/1999/xhtml' xmlns:b='https://www.google.com/2005/gml/b' xmlns:data='https://www.google.com/2005/gml/data' xmlns:expr='https://www.google.com/2005/gml/expr'>
 <head>
 <title>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
@@ -15,6 +15,9 @@ Page Not Found | <data:blog.title/>
 </title>
 <b:if cond='data:blog.isMobile'>
 <meta content='noindex,nofollow' name='robots'/>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+<meta content='noindex,noarchive' name='robots'/>
 </b:if>
 <meta content='GOOGLE-SITE-VERIFICATION-HERE' name='google-site-verification'/>
 <meta content='MICROSOFT-SITE-VERIFICATION-HERE' name='msvalidate.01'/>
@@ -33,7 +36,7 @@ Page Not Found | <data:blog.title/>
 <meta content='blogger' name='generator'/>
 <meta content='general' name='rating'/>
 <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
-<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
 <link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
 <link expr:href='data:blog.url' rel='canonical'/>
 <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -55,9 +58,10 @@ Page Not Found | <data:blog.title/>
 <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
-<link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='&quot;https://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
 <link href='//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' media='screen' rel='stylesheet'/>
-<b:skin><![CDATA[html,body{font-family:'Open Sans',Arial,'NanumGothic',sans-serif;font-size:15px}body{padding-top:70px}hr{border-top:1px solid #eee}pre{margin:10px 0;border-radius:4px}code,pre{font-family:Monospace,Monaco,Menlo,Consolas,"Courier New"}.panel-heading{font-weight:bold}.navbar-nav>li>.dropdown-menu{margin-top:2px;border:1px solid #ccc;border-radius:4px}.navbar-inverse .navbar-brand{color:white;font-weight:bold}.navbar-inverse .navbar-nav>li>a{color:white}#navbar,#Attribution1{display:none;height:0;visibility:hidden}.text-right{margin:10px 0 0 0}.pager li>a,.pager li>span{border-radius:4px}.panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}.post-meta{margin-bottom:-1rem;color:grey}.blog-footer{margin-top:20px;padding:20px 0;text-align:center;background-color:#eee;border-top:1px solid #ccc;color:#586069!important}.footer-line{margin:5px 0}.line-break{display:inline;margin-right:45px}.post-meta-line{display:inline;margin-right:17px;color:#777}.footer-line a:link{color:inherit}.footer-line a:hover,.footer-line a:focus{color:#337ab7;text-decoration:none}.separator img{border:2px solid #777;border-radius:4px;width:auto;height:auto}@media(max-width:992px){.separator img{max-width:100%!important;height:auto}}.separator a{margin-left:0!important;margin-right:0!important}.comments .comments-content .comment{margin-bottom:0}.comments .comment .comment-actions a{padding:6px 12px;border-radius:4px;margin-right:10px;color:inherit;border:1px solid #bce8f1;background-color:#d9edf7}.avatar-image-container{background:none!important;border:none!important}.datetime.secondary-text{float:right}.comments .comments-content .comment-content{line-height:20px;font-size:14px;padding-bottom:10px}.user.blog-author a{font-size:20px}.comment-actions a{color:#fff}.comments .continue{cursor:pointer;border:1px solid #d6e9c6;border-radius:4px;width:-moz-fit-content;background-color:#dff0d8}.comment-block{border:1px solid #ddd;padding:20px;border-radius:4px}.comment-header{border-bottom:1px solid #ddd;padding-bottom:10px}#comments{padding:10px;border:0 dashed #ddd}#comment-editor{border:1px solid #ccc;border-radius:4px;height:240px}#comments-block3{padding:0;margin:0;float:left;overflow:hidden;position:relative}#comment-name-url{width:465px;float:left}#comment-date{width:465px;float:left;margin-top:5px;font-size:10px}#comments h4{font-weight:normal;text-transform:capitalize;margin:0;margin-top:5px;margin-bottom:0;border-top:1px solid #d2d2d2;padding-top:20px}#tothetopbtn{position:fixed;bottom:0;right:0;padding:7px;z-index:100;fill-opacity:.36;transition:fill-opacity .3s ease-out}#tothetopbtn:hover{fill-opacity:1}.embed-responsive{border:solid 2px #777;border-radius:4px}@media(max-width:767px){.panel-mobile{padding:0;border:0}.line-break{display:block;margin-bottom:1rem;margin-right:0}.post-meta-line{display:block;padding-left:3px}}]]></b:skin>
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' rel='stylesheet'/>
+<b:skin><![CDATA[html,body{font-family:'Open Sans',Arial,'NanumGothic',sans-serif;font-size:15px}body{padding-top:70px}hr{border-top:1px solid #eee}pre{margin:10px 0;border-radius:4px}code,pre{font-family:Monospace,Monaco,Menlo,Consolas,"Courier New"}.panel-heading{font-weight:bold}.navbar-nav>li>.dropdown-menu{margin-top:2px;border:1px solid #ccc;border-radius:4px}.navbar-inverse .navbar-brand{color:white;font-weight:bold}.navbar-inverse .navbar-nav>li>a{color:white;border-bottom:#222 solid 3px}#navbar,#Attribution1{display:none;height:0;visibility:hidden}.text-right{margin:10px 0 0 0}.pager li>a,.pager li>span{border-radius:4px}.panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}.post-meta{margin-bottom:-1rem;color:grey}.blog-footer{margin-top:20px;padding:20px 0;text-align:center;background-color:#363636;font-size:14px;color:#a9a9a9!important}.blog-footer a{color:#dadada;font-weight:bold}.footer-line{margin:5px 0}.line-break{display:inline;margin-right:45px}.post-meta-line{display:inline;margin-right:17px;color:#777}.footer-line a:link{color:inherit}.footer-line a:hover,.footer-line a:focus{color:#337ab7;text-decoration:none}.separator img{border:2px solid #777;border-radius:4px;width:auto;height:auto}@media(max-width:992px){.separator img{max-width:100%!important;height:auto}}.separator a{margin-left:0!important;margin-right:0!important}.comments .comments-content .comment{margin-bottom:0}.comments .comment .comment-actions a{padding:6px 12px;border-radius:4px;margin-right:10px;color:inherit;border:1px solid #bce8f1;background-color:#d9edf7}.avatar-image-container{background:none!important;border:none!important}.datetime.secondary-text{float:right}.comments .comments-content .comment-content{line-height:20px;font-size:14px;padding-bottom:10px}.user.blog-author a{font-size:20px}.comment-actions a{color:#fff}.comments .continue{cursor:pointer;border:1px solid #d6e9c6;border-radius:4px;width:-moz-fit-content;background-color:#dff0d8}.comment-block{border:1px solid #ddd;padding:20px;border-radius:4px}.comment-header{border-bottom:1px solid #ddd;padding-bottom:10px}#comments{padding:10px;border:0 dashed #ddd}#comment-editor{border:1px solid #ccc;border-radius:4px;height:240px}#comments-block3{padding:0;margin:0;float:left;overflow:hidden;position:relative}#comment-name-url{width:465px;float:left}#comment-date{width:465px;float:left;margin-top:5px;font-size:10px}#comments h4{font-weight:normal;text-transform:capitalize;margin:0;margin-top:5px;margin-bottom:0;border-top:1px solid #d2d2d2;padding-top:20px}#tothetopbtn{position:fixed;bottom:0;right:0;padding:7px;z-index:100;fill-opacity:.36;transition:fill-opacity .3s ease-out}#tothetopbtn:hover{fill-opacity:1}.embed-responsive{border:solid 2px #777;border-radius:4px}@media(max-width:767px){.panel-mobile{padding:0;border:0}.line-break{display:block;margin-bottom:1rem;margin-right:0}.post-meta-line{display:block;padding-left:3px}}.page-header{padding-bottom:0;border-bottom:0}.contact-form-widget{padding:0 7px;max-width:none;width:100%}.contact-form-name,.contact-form-email,.contact-form-email-message{max-width:none;width:100%}.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{border-bottom:white solid 3px}.navbar{border:0}.FollowByEmail .follow-by-email-inner{padding:7px}.follow-email{padding:7px}]]></b:skin>
 </head>
 <body>
 <div class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
@@ -74,7 +78,7 @@ Page Not Found | <data:blog.title/>
 <ul class='nav navbar-nav'>
 <li><a href='/p/about.html'>About</a></li>
 <li><a href='/p/archive.html'>Archive</a></li>
-<li class='dropdown'><a class='dropdown-toggle' data-toggle='dropdown' href='#'>Meta<b class='caret'/></a>
+<li class='dropdown' onmouseover='' style='cursor: pointer;'><a class='dropdown-toggle' data-toggle='dropdown'>Meta<b class='caret'/></a>
 <ul class='dropdown-menu'>
 <li><a href='/p/privacy-policy.html'>Privacy Policy</a></li>
 <li class='divider' role='separator'/>
@@ -87,7 +91,10 @@ Page Not Found | <data:blog.title/>
 <form accept-charset='utf-8' action='/search' class='navbar-form navbar-right' method='get' role='search' target='_top'>
 <div class='input-group'>
 <input autocomplete='off' class='form-control' id='search-text' name='q' placeholder='Search' title='Search' type='text'/>
-<span class='input-group-btn'><button class='btn btn-default' id='search-button' type='submit'>Search</button></span>
+<span class='input-group-btn'><button class='btn btn-default' id='search-button' type='submit'>
+<svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z' fill='#777'/></svg>
+</button>
+</span>
 </div>
 </form>
 </div>
@@ -99,22 +106,6 @@ Page Not Found | <data:blog.title/>
 <div class='col-sm-9'>
 <div class='form-group'>
 <b:section class='main' id='main' showaddelement='yes'>
-<b:widget id='AdSense3' locked='false' title='' type='AdSense' version='1'>
-<b:widget-settings>
-<b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-<b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-<b:widget-setting name='style.layout'>1x1</b:widget-setting>
-<b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-<b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-<b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-<b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<div class='widget-content' style='clear:both; margin: 0 0 15px 0'>
-<data:adCode/>
-</div>
-</b:includable>
-</b:widget>
 <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
 <b:widget-settings>
 <b:widget-setting name='showDateHeader'>true</b:widget-setting>
@@ -438,7 +429,7 @@ google.setOnLoadCallback(initialize);</script>
 </div>
 <div style='clear: both;'/>
 <p class='text-right'>
-<a class='rmlink btn btn-primary' expr:href='data:post.url'>Read More <svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M1312 896q0 37-32 55l-544 320q-15 9-32 9-16 0-32-8-32-19-32-56v-640q0-37 32-56 33-18 64 1l544 320q32 18 32 55zm128 0q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z' fill='#fff'/></svg></a>
+<a class='rmlink btn btn-primary' expr:href='data:post.url'>Read More <svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M1312 896q0 37-32 55l-544 320q-15 9-32 9-16 0-32-8-32-19-32-56v-640q0-37 32-56 33-18 64 1l544 320q32 18 32 55zm128 0q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z' fill='#fff'/></svg></a>
 </p>
 <div class='mobile-index-comment'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
@@ -492,7 +483,7 @@ google.setOnLoadCallback(initialize);</script>
 <div class='panel panel-mobile panel-default'>
 <div class='panel-body panel-mobile'>
 <div class='post-outer'>
-<div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
 <b:if cond='data:post.thumbnailUrl'>
 <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
 </b:if>
@@ -518,9 +509,9 @@ google.setOnLoadCallback(initialize);</script>
 </b:if>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='post-meta'>
-<span class='post-meta-line'><svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z' fill='#777'/></svg> <data:post.dateHeader/></span>
-<span class='post-meta-line'><svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z' fill='#777'/></svg> <data:post.numComments/></span>
-<span class='post-meta-line'><svg height='15' viewBox='0 0 2048 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M512 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91zm384 0q0 53-37 90l-491 492q-39 37-91 37-36 0-59-14t-53-45l470-470q37-37 37-90 0-52-37-91l-715-714q-38-38-102-64.5t-117-26.5h224q53 0 117 26.5t102 64.5l715 714q37 39 37 91z' fill='#777'/></svg>
+<span class='post-meta-line'><svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='https://www.w3.org/2000/svg'><path d='M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z' fill='#777'/></svg> <data:post.dateHeader/></span>
+<span class='post-meta-line'><svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z' fill='#777'/></svg> <data:post.numComments/></span>
+<span class='post-meta-line'><svg height='15' viewBox='0 0 2048 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M512 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91zm384 0q0 53-37 90l-491 492q-39 37-91 37-36 0-59-14t-53-45l470-470q37-37 37-90 0-52-37-91l-715-714q-38-38-102-64.5t-117-26.5h224q53 0 117 26.5t102 64.5l715 714q37 39 37 91z' fill='#777'/></svg>
 <b:if cond='data:post.labels'>
 <b:loop values='data:post.labels' var='label'>
 <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
@@ -542,12 +533,12 @@ google.setOnLoadCallback(initialize);</script>
 <span class='post-author vcard'>
 <b:if cond='data:top.showAuthor'>
 <b:if cond='data:post.authorProfileUrl'>
-<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
 <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><span itemprop='name'><data:post.author/></span></a>
 </span>
 <b:else/>
-<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 <span itemprop='name'><data:post.author/></span>
 </span>
 </b:if>
@@ -622,7 +613,7 @@ google.setOnLoadCallback(initialize);</script>
 <div class='clear'/>
 </b:includable>
 <b:includable id='post' var='post'>
-<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
 <b:if cond='data:post.firstImageUrl'>
 <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
 </b:if>
@@ -648,9 +639,9 @@ google.setOnLoadCallback(initialize);</script>
 </b:if>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='post-meta'>
-<span class='post-meta-line'><svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z' fill='#777'/></svg> <data:post.dateHeader/></span>
-<span class='post-meta-line'><svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z' fill='#777'/></svg> <data:post.numComments/></span>
-<span class='post-meta-line'><svg height='15' viewBox='0 0 2048 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M512 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91zm384 0q0 53-37 90l-491 492q-39 37-91 37-36 0-59-14t-53-45l470-470q37-37 37-90 0-52-37-91l-715-714q-38-38-102-64.5t-117-26.5h224q53 0 117 26.5t102 64.5l715 714q37 39 37 91z' fill='#777'/></svg>
+<span class='post-meta-line'><svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='https://www.w3.org/2000/svg'><path d='M192 1664h288v-288h-288v288zm352 0h320v-288h-320v288zm-352-352h288v-320h-288v320zm352 0h320v-320h-320v320zm-352-384h288v-288h-288v288zm736 736h320v-288h-320v288zm-384-736h320v-288h-320v288zm768 736h288v-288h-288v288zm-384-352h320v-320h-320v320zm-352-864v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm736 864h288v-320h-288v320zm-384-384h320v-288h-320v288zm384 0h288v-288h-288v288zm32-480v-288q0-13-9.5-22.5t-22.5-9.5h-64q-13 0-22.5 9.5t-9.5 22.5v288q0 13 9.5 22.5t22.5 9.5h64q13 0 22.5-9.5t9.5-22.5zm384-64v1280q0 52-38 90t-90 38h-1408q-52 0-90-38t-38-90v-1280q0-52 38-90t90-38h128v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h384v-96q0-66 47-113t113-47h64q66 0 113 47t47 113v96h128q52 0 90 38t38 90z' fill='#777'/></svg> <data:post.dateHeader/></span>
+<span class='post-meta-line'><svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z' fill='#777'/></svg> <data:post.numComments/></span>
+<span class='post-meta-line'><svg height='15' viewBox='0 0 2048 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M512 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91zm384 0q0 53-37 90l-491 492q-39 37-91 37-36 0-59-14t-53-45l470-470q37-37 37-90 0-52-37-91l-715-714q-38-38-102-64.5t-117-26.5h224q53 0 117 26.5t102 64.5l715 714q37 39 37 91z' fill='#777'/></svg>
 <b:if cond='data:post.labels'>
 <b:loop values='data:post.labels' var='label'>
 <a expr:href='data:label.url' rel='tag'><data:label.name/></a>
@@ -689,7 +680,7 @@ google.setOnLoadCallback(initialize);</script>
 <div style='clear: both;'/>
 <b:if cond='data:post.hasJumpLink'>
 <p class='text-right'>
-<a class='rmlink btn btn-primary' expr:href='data:post.url'>Read More <svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='http://www.w3.org/2000/svg'><path d='M1312 896q0 37-32 55l-544 320q-15 9-32 9-16 0-32-8-32-19-32-56v-640q0-37 32-56 33-18 64 1l544 320q32 18 32 55zm128 0q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z' fill='#fff'/></svg></a>
+<a class='rmlink btn btn-primary' expr:href='data:post.url'>Read More <svg height='15' viewBox='0 0 1792 1792' width='15' xmlns='https://www.w3.org/2000/svg'><path d='M1312 896q0 37-32 55l-544 320q-15 9-32 9-16 0-32-8-32-19-32-56v-640q0-37 32-56 33-18 64 1l544 320q32 18 32 55zm128 0q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z' fill='#fff'/></svg></a>
 </p>
 </b:if>
 </b:if>
@@ -701,12 +692,12 @@ google.setOnLoadCallback(initialize);</script>
 <b:if cond='data:top.showAuthor'>
 <data:top.authorLabel/>
 <b:if cond='data:post.authorProfileUrl'>
-<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
 <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><span itemprop='name'><data:post.author/></span></a>
 </span>
 <b:else/>
-<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 <span itemprop='name'><data:post.author/></span>
 </span>
 </b:if>
@@ -761,7 +752,7 @@ google.setOnLoadCallback(initialize);</script>
 <span class='post-icons'>
 <b:if cond='data:post.emailPostUrl'>
 <span class='item-action'>
-<a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'><img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/></a>
+<a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'><img alt='' class='icon-action' height='13' src='https://img1.blogblog.com/img/icon18_email.gif' width='18'/></a>
 </span>
 </b:if>
 </span>
@@ -793,7 +784,7 @@ google.setOnLoadCallback(initialize);</script>
 </span>
 </div>
 <b:if cond='data:post.authorAboutMe'>
-<div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
 <b:if cond='data:post.authorPhoto.url'>
 <img expr:src='data:post.authorPhoto.url' itemprop='image' width='50px'/>
 </b:if>
@@ -883,7 +874,7 @@ google.setOnLoadCallback(initialize);</script>
 </b:includable>
 <b:includable id='threaded_comment_js' var='post'>
 <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
-<script type='text/javascript'>(function(){var C=<data:post.commentJso/>;var F=<data:post.commentMsgs/>;var w=<data:post.commentConfig/>;var K=null;if(C&amp;&amp;C.length&gt;0){K=parseInt(C[C.length-1].timestamp)+1}var y=function(a){if(a.gd$extendedProperty){for(var b in a.gd$extendedProperty){if(a.gd$extendedProperty[b].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+a.content.$t+&quot;&lt;/span&gt;&quot;}}}return a.content.$t};var B=function(e){K=null;var a=[];if(e&amp;&amp;e.feed&amp;&amp;e.feed.entry){for(var d=0,i;i=e.feed.entry[d];d++){var b={};var h=/blog-(\d+).post-(\d+)/.exec(i.id.$t);b.id=h?h[2]:null;b.body=y(i);b.timestamp=Date.parse(i.published.$t)+&quot;&quot;;if(i.author&amp;&amp;i.author.constructor===Array){var g=i.author[0];if(g){b.author={name:(g.name?g.name.$t:undefined),profileUrl:(g.uri?g.uri.$t:undefined),avatarUrl:(g.gd$image?g.gd$image.src:undefined)}}}if(i.link){if(i.link[2]){b.link=b.permalink=i.link[2].href}if(i.link[3]){var c=/.*comments\/default\/(\d+)\?.*/.exec(i.link[3].href);if(c&amp;&amp;c[1]){b.parentId=c[1]}}}b.deleteclass=&quot;item-control blog-admin&quot;;if(i.gd$extendedProperty){for(var f in i.gd$extendedProperty){if(i.gd$extendedProperty[f].name==&quot;blogger.itemClass&quot;){b.deleteclass+=&quot; &quot;+i.gd$extendedProperty[f].value}else{if(i.gd$extendedProperty[f].name==&quot;blogger.displayTime&quot;){b.displayTime=i.gd$extendedProperty[f].value}}}}a.push(b)}}return a};var H=function(c){if(M()){var a=w.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(K){a+=&quot;&amp;published-min=&quot;+new Date(K).toISOString()}window.bloggercomments=function(d){var e=B(d);K=e.length&lt;50?null:parseInt(e[e.length-1].timestamp)+1;c(e);window.bloggercomments=null};a+=&quot;&amp;callback=bloggercomments&quot;;var b=document.createElement(&quot;script&quot;);b.type=&quot;text/javascript&quot;;b.src=a;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(b)}};var M=function(){return !!K};var O=function(b,c){if(&quot;iswriter&quot;==b){var a=!!c.author&amp;&amp;c.author.name==w.authorName&amp;&amp;c.author.profileUrl==w.authorUrl;return a?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==b){return w.baseUri+&quot;/delete-comment.g?blogID=&quot;+w.blogId+&quot;&amp;postID=&quot;+c.id}else{if(&quot;deleteclass&quot;==b){return c.deleteclass}}}return&quot;&quot;};var I=null;var z=null;var D=undefined;var L=function(b,a){if(I==null){I=document.getElementById(&quot;comment-editor&quot;);if(I!=null){I.height=&quot;250px&quot;;I.style.display=&quot;block&quot;;z=I.src.split(&quot;#&quot;)}}if(I&amp;&amp;(b!==D)){document.getElementById(a).insertBefore(I,null);I.src=z[0]+(b?&quot;&amp;parentID=&quot;+b:&quot;&quot;)+&quot;#&quot;+z[1];D=b}};var N=(window.location.hash||&quot;#&quot;).substring(1);var A,G;if(/^comment-form_/.test(N)){A=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){G=N.substring(1)}}var J={maxDepth:w.maxThreadDepth};var x={id:w.postId,data:C,loadNext:H,hasMore:M,getMeta:O,onReply:L,rendered:true,initComment:G,initReplyThread:A,config:J,messages:F};var v=function(){if(window.goog&amp;&amp;window.goog.comments){var a=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(a,x)}};if(window.goog&amp;&amp;window.goog.comments){v()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(v)}})();</script>
+<script type='text/javascript'>(function(){var C=<data:post.commentJso/>;var E=<data:post.commentMsgs/>;var v=<data:post.commentConfig/>;var J=null;if(C&amp;&amp;C.length&gt;0){J=parseInt(C[C.length-1].timestamp)+1}var y=function(a){if(a.gd$extendedProperty){for(var b in a.gd$extendedProperty){if(a.gd$extendedProperty[b].name==&quot;blogger.contentRemoved&quot;){return&#39;&lt;span class=&quot;deleted-comment&quot;&gt;&#39;+a.content.$t+&quot;&lt;/span&gt;&quot;}}}return a.content.$t};var B=function(e){J=null;var a=[];if(e&amp;&amp;e.feed&amp;&amp;e.feed.entry){for(var d=0,i;i=e.feed.entry[d];d++){var b={};var h=/blog-(\d+).post-(\d+)/.exec(i.id.$t);b.id=h?h[2]:null;b.body=y(i);b.timestamp=Date.parse(i.published.$t)+&quot;&quot;;if(i.author&amp;&amp;i.author.constructor===Array){var g=i.author[0];if(g){b.author={name:(g.name?g.name.$t:undefined),profileUrl:(g.uri?g.uri.$t:undefined),avatarUrl:(g.gd$image?g.gd$image.src:undefined)}}}if(i.link){if(i.link[2]){b.link=b.permalink=i.link[2].href}if(i.link[3]){var c=/.*comments\/default\/(\d+)\?.*/.exec(i.link[3].href);if(c&amp;&amp;c[1]){b.parentId=c[1]}}}b.deleteclass=&quot;item-control blog-admin&quot;;if(i.gd$extendedProperty){for(var f in i.gd$extendedProperty){if(i.gd$extendedProperty[f].name==&quot;blogger.itemClass&quot;){b.deleteclass+=&quot; &quot;+i.gd$extendedProperty[f].value}else{if(i.gd$extendedProperty[f].name==&quot;blogger.displayTime&quot;){b.displayTime=i.gd$extendedProperty[f].value}}}}a.push(b)}}return a};var G=function(c){if(L()){var a=v.feed+&quot;?alt=json&amp;v=2&amp;orderby=published&amp;reverse=false&amp;max-results=50&quot;;if(J){a+=&quot;&amp;published-min=&quot;+new Date(J).toISOString()}window.bloggercomments=function(d){var e=B(d);J=e.length&lt;50?null:parseInt(e[e.length-1].timestamp)+1;c(e);window.bloggercomments=null};a+=&quot;&amp;callback=bloggercomments&quot;;var b=document.createElement(&quot;script&quot;);b.type=&quot;text/javascript&quot;;b.src=a;document.getElementsByTagName(&quot;head&quot;)[0].appendChild(b)}};var L=function(){return !!J};var O=function(b,c){if(&quot;iswriter&quot;==b){var a=!!c.author&amp;&amp;c.author.name==v.authorName&amp;&amp;c.author.profileUrl==v.authorUrl;return a?&quot;true&quot;:&quot;&quot;}else{if(&quot;deletelink&quot;==b){return v.baseUri+&quot;/delete-comment.g?blogID=&quot;+v.blogId+&quot;&amp;postID=&quot;+c.id}else{if(&quot;deleteclass&quot;==b){return c.deleteclass}}}return&quot;&quot;};var H=null;var z=null;var D=undefined;var K=function(b,a){if(H==null){H=document.getElementById(&quot;comment-editor&quot;);if(H!=null){H.height=&quot;250px&quot;;H.style.display=&quot;block&quot;;z=H.src.split(&quot;#&quot;)}}if(H&amp;&amp;(b!==D)){document.getElementById(a).insertBefore(H,null);H.src=z[0]+(b?&quot;&amp;parentID=&quot;+b:&quot;&quot;)+&quot;#&quot;+z[1];D=b}};var N=(window.location.hash||&quot;#&quot;).substring(1);var A,F;if(/^comment-form_/.test(N)){A=N.substring(&quot;comment-form_&quot;.length)}else{if(/^c[0-9]+$/.test(N)){F=N.substring(1)}}var I={maxDepth:v.maxThreadDepth};var w={id:v.postId,data:C,loadNext:G,hasMore:L,getMeta:O,onReply:K,rendered:true,initComment:F,initReplyThread:A,config:I,messages:E};var q=function(){if(window.goog&amp;&amp;window.goog.comments){var a=document.getElementById(&quot;comment-holder&quot;);window.goog.comments.render(a,w)}};if(window.goog&amp;&amp;window.goog.comments){q()}else{window.goog=window.goog||{};window.goog.comments=window.goog.comments||{};window.goog.comments.loadQueue=window.goog.comments.loadQueue||[];window.goog.comments.loadQueue.push(q)}})();</script>
 </b:includable>
 <b:includable id='threaded_comments' var='post'>
 <div class='comments' id='comments'>
@@ -925,22 +916,30 @@ google.setOnLoadCallback(initialize);</script>
 </div>
 <div class='col-sm-3'>
 <b:section class='sidebar' id='sidebar' preferred='yes'>
-<b:widget id='HTML1' locked='false' title='' type='HTML' version='1'>
-<b:widget-settings>
-<b:widget-setting name='content'><![CDATA[<style>#socialbar{display:flex;list-style:none;margin:0;padding:0;justify-content:space-between;width:100%}#socialbutton{background-color:#08c;padding:10px 10px 5px 10px;line-height:1.42857143;text-align:center;vertical-align:middle;border:1px solid #2e6da4;border-radius:4px;margin-bottom:20px}</style> <div id="socialbutton"> <ul id="socialbar"> <li><a href="https://www.rizaumami.com/atom.xml" title="Subscribe to my RSS feed"><svg width="32" height="32" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M576 1344q0 80-56 136t-136 56-136-56-56-136 56-136 136-56 136 56 56 136zm512 123q2 28-17 48-18 21-47 21h-135q-25 0-43-16.5t-20-41.5q-22-229-184.5-391.5t-391.5-184.5q-25-2-41.5-20t-16.5-43v-135q0-29 21-47 17-17 43-17h5q160 13 306 80.5t259 181.5q114 113 181.5 259t80.5 306zm512 2q2 27-18 47-18 20-46 20h-143q-26 0-44.5-17.5t-19.5-42.5q-12-215-101-408.5t-231.5-336-336-231.5-408.5-102q-25-1-42.5-19.5t-17.5-43.5v-143q0-28 20-46 18-18 44-18h3q262 13 501.5 120t425.5 294q187 186 294 425.5t120 501.5z" fill="#fff"/></path></svg></a></li> <li><a href="https://github.com/rizaumami" title="See my GitHub repo"><svg width="32" height="32" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z" fill="#fff"/></path></svg></a></li> <li><a href="" title="Mari diskusi di Telegram"><svg width="30" height="30" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1189 1307l147-693q9-44-10.5-63t-51.5-7l-864 333q-29 11-39.5 25t-2.5 26.5 32 19.5l221 69 513-323q21-14 32-6 7 5-4 15l-415 375-16 228q23 0 45-22l108-104 224 165q64 36 81-38zm603-411q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z" fill="#fff"/></path></svg></a></li> <li><a href="mailto:sahririzaumami@gmail.com" title="Email me"><svg width="32" height="32" viewbox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z" fill="#fff"/></path></svg></a></li> </ul> </div>]]></b:widget-setting>
-</b:widget-settings>
+<b:widget id='FollowByEmail1' locked='false' title='Follow Us by Email' type='FollowByEmail' version='1'>
 <b:includable id='main'>
+<div class='panel panel-primary'>
 <b:if cond='data:title != &quot;&quot;'>
-<h2 class='title'><data:title/></h2>
+<div class='panel-heading'>
+<data:title/>
+</div>
 </b:if>
 <div class='widget-content'>
-<data:content/>
+<form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+<div class='follow-email input-group'>
+<input class='form-control' name='email' placeholder='Email address...' type='text'/>
+<span class='input-group-btn'><button class='btn btn-primary' type='submit button'>Submit</button></span>
+</div>
+<input expr:value='data:feedPath' name='uri' type='hidden'/>
+<input name='loc' type='hidden' value='en_US'/>
+</form>
+</div>
 </div>
 </b:includable>
 </b:widget>
 <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
 <b:widget-settings>
-<b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+<b:widget-setting name='numItemsToShow'>10</b:widget-setting>
 <b:widget-setting name='showThumbnails'>false</b:widget-setting>
 <b:widget-setting name='showSnippets'>false</b:widget-setting>
 <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
@@ -959,22 +958,6 @@ google.setOnLoadCallback(initialize);</script>
 </a>
 </b:loop>
 </div>
-</div>
-</b:includable>
-</b:widget>
-<b:widget id='AdSense2' locked='false' title='' type='AdSense' version='1'>
-<b:widget-settings>
-<b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-<b:widget-setting name='style.textcolor'>#333333</b:widget-setting>
-<b:widget-setting name='style.layout'>1x1</b:widget-setting>
-<b:widget-setting name='style.bordercolor'>#777777</b:widget-setting>
-<b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-<b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-<b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-</b:widget-settings>
-<b:includable id='main'>
-<div class='widget-content' style='clear:both; margin: 15px 0 15px 0'>
-<data:adCode/>
 </div>
 </b:includable>
 </b:widget>
@@ -1034,14 +1017,14 @@ google.setOnLoadCallback(initialize);</script>
 </b:widget>
 <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
 <b:widget-settings>
-<b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+<b:widget-setting name='showStyle'>FLAT</b:widget-setting>
 <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
 <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
 <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
 <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
 <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
 <b:widget-setting name='chronological'>false</b:widget-setting>
-<b:widget-setting name='showPosts'>true</b:widget-setting>
+<b:widget-setting name='showPosts'>false</b:widget-setting>
 <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
 </b:widget-settings>
 <b:includable id='main'>
@@ -1116,32 +1099,51 @@ google.setOnLoadCallback(initialize);</script>
 <b:includable id='toggle' var='interval'>
 <b:if cond='data:interval.toggleId'>
 <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='http://www.w3.org/2000/svg'>
+<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='https://www.w3.org/2000/svg'>
 <path d='M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z' fill='#777'/>
 </svg>
 <b:else/>
 <span class='zippy'>
 <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
-<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z' fill='#777'/></svg>
+<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='https://www.w3.org/2000/svg'><path d='M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z' fill='#777'/></svg>
 <b:else/>
-<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z' fill='#777'/></svg>
+<svg height='14' viewBox='0 0 1792 1792' width='14' xmlns='https://www.w3.org/2000/svg'><path d='M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z' fill='#777'/></svg>
 </b:if>
 </span>
 </b:if>
 </b:if>
 </b:includable>
 </b:widget>
-<b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-<b:widget-settings>
-<b:widget-setting name='copyright'/>
-</b:widget-settings>
+<b:widget id='ContactForm1' locked='false' title='Contact Me' type='ContactForm' version='1'>
 <b:includable id='main'>
-<div class='widget-content' style='text-align: center;'>
-<b:if cond='data:attribution != &quot;&quot;'>
-<data:attribution/>
-</b:if>
+<div class='panel panel-primary'>
+<b:if cond='data:title != &quot;&quot;'>
+<div class='panel-heading'>
+<data:title/>
 </div>
-<b:include name='quickedit'/>
+</b:if>
+<div class='contact-form-widget'>
+<div class='form'>
+<form name='contact-form'>
+<p/><data:contactFormNameMsg/>
+<br/>
+<input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
+<p/><data:contactFormEmailMsg/> <span style='font-weight: bolder;'>*</span>
+<br/>
+<input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
+<p/><data:contactFormMessageMsg/> <span style='font-weight: bolder;'>*</span>
+<br/>
+<textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
+<p/><input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
+<p/>
+<div style='text-align: center; max-width: 222px; width: 100%'>
+<p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+<p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+</div>
+</form>
+</div>
+</div>
+</div>
 </b:includable>
 </b:widget>
 </b:section>
@@ -1149,7 +1151,7 @@ google.setOnLoadCallback(initialize);</script>
 </div>
 </div>
 <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'>
-<b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'/>
+<b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
 </b:section>
 <nav aria-label='Page navigation'>
 <ul class='pagination'>
@@ -1159,6 +1161,40 @@ google.setOnLoadCallback(initialize);</script>
 </ul>
 </nav>
 <div class='blog-footer'>
+<div>
+<ul class='list-inline text-center footer-links'>
+<li>
+<a href='YOUR-GITHUB-REPO-HERE' title='GitHub'><span class='fa-stack fa-lg'>
+<i class='fa fa-circle-thin fa-stack-2x'/>
+<i class='fa fa-github fa-stack-1x fa-inverse'/>
+</span></a>
+</li>
+<li>
+<a href='mailto:YOUR-EMAIL-HERE' title='Email me'><span class='fa-stack fa-lg'>
+<i class='fa fa-circle-thin fa-stack-2x'/>
+<i class='fa fa-envelope fa-stack-1x fa-inverse'/>
+</span></a>
+</li>
+<li>
+<a href='YOUR-RSS-HERE' title='RSS'><span class='fa-stack fa-lg'>
+<i class='fa fa-circle-thin fa-stack-2x'/>
+<i class='fa fa-rss fa-stack-1x fa-inverse'/>
+</span></a>
+</li>
+<li>
+<a href='YOUR-TELEGRAM-USERNAME-HERE' title='Telegram'><span class='fa-stack fa-lg'>
+<i class='fa fa-circle-thin fa-stack-2x'/>
+<i class='fa fa-paper-plane fa-stack-1x fa-inverse'/>
+</span></a>
+</li>
+<li>
+<a href='YOUR-TWITTER-HERE' title='Twitter'><span class='fa-stack fa-lg'>
+<i class='fa fa-circle-thin fa-stack-2x'/>
+<i class='fa fa-twitter fa-stack-1x fa-inverse'/>
+</span></a>
+</li>
+</ul>
+</div>
 <p>
 <span class='line-break'>&#169; <script type='text/javascript'>document.write(new Date().getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a> All Rights Reserved</span>
 <span class='line-break'><a href='/p/privacy-policy.html'>Privacy Policy</a></span>
@@ -1167,7 +1203,7 @@ google.setOnLoadCallback(initialize);</script>
 </p>
 </div>
 <a href='#' id='tothetopbtn'>
-<svg height='60' viewbox='0 0 1792 1792' width='60' xmlns='http://www.w3.org/2000/svg'>
+<svg height='60' viewbox='0 0 1792 1792' width='60' xmlns='https://www.w3.org/2000/svg'>
 <path d='M1293 1139l102-102q19-19 19-45t-19-45l-454-454q-19-19-45-19t-45 19l-454 454q-19 19-19 45t19 45l102 102q19 19 45 19t45-19l307-307 307 307q19 19 45 19t45-19zm371-243q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z' fill='red'/>
 <title>Back to Top</title>
 </svg>
